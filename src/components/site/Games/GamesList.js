@@ -2,7 +2,7 @@ import React from 'react';
 import GamesCreate from './GamesCreate';
 import GamesTable from './GamesTable';
 import { Container, Row, Col } from 'reactstrap';
-import APIURL from '../helpers/environment';
+import APIURL from '../../../helpers/environment';
 class GamesList extends React.Component {
   constructor(props) {
     super(props)

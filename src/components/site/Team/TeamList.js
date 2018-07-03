@@ -2,7 +2,7 @@ import React from 'react';
 import TeamCreate from './TeamCreate';
 import TeamTable from './TeamTable';
 import { Container, Row, Col } from 'reactstrap';
-import APIURL from '../helpers/environment';
+import APIURL from '../../../helpers/environment';
 class TeamList extends React.Component {
   constructor(props) {
     super(props)

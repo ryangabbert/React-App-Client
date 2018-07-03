@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import APIURL from '../helpers/environment';
+import APIURL from '../../../helpers/environment';
 class TeamCreate extends Component {
     constructor(props) {
         super(props)

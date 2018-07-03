@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
-import APIURL from '../helpers/environment';
+import APIURL from '../../../helpers/environment';
 
 class Signup extends Component {
     constructor(props) {
