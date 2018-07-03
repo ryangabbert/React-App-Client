@@ -17,7 +17,7 @@ class Signup extends Component {
         });
     }
     handleSubmit = (event) => {
-        fetch(`${APUURL}/api/user/signup`, {
+        fetch(`${APIURL}/api/user/signup`, {
             method: 'POST',
             body: JSON.stringify({User:this.state}),
             headers: new Headers({
