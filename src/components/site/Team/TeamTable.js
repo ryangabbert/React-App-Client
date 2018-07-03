@@ -1,6 +1,6 @@
 import React from 'react';
 import { Table, Button } from 'reactstrap';
-const TeamTable = (props) => { //1
+const TeamTable = (props) => { 
     return (
         <div>
             <h3>Your Squad</h3>
