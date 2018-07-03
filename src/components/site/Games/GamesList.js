@@ -14,7 +14,7 @@ class GamesList extends React.Component {
     this.fetchGames()
   }
   fetchGames = () => {
-    fetch(`'${APIURL}/api/games/'`, {
+    fetch(`'${APIURL}/api/games/getall'`, {
       method: 'GET',
       headers: new Headers({
         'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ class GamesList extends React.Component {
       })
   }
   GamesDelete = (event) => { //1 
-    fetch(`${APIURL}/api/games/creategame`, {
+    fetch(`'${APIURL}/api/games/deletegame'`, {
       method: 'DELETE', //2
       body: JSON.stringify({ Games: { id: event.target.id } }), //3
       headers: new Headers({
@@ -39,7 +39,7 @@ class GamesList extends React.Component {
   }
   render() {
     const games = this.state.Games.length >= 1 ?
-    <GamesTable Games={this.state.Games} delete={this.gamesDelete} update={this.setUpdatedGames} /> :
+    <GamesTable Games={this.state.Games} delete={this.GamesDelete} update={this.setUpdatedGames} /> :
     <h2>Log a game to see table</h2>
     return (
       <Container>
