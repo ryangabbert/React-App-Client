@@ -14,7 +14,7 @@ class GamesList extends React.Component {
     this.fetchGames()
   }
   fetchGames = () => {
-    fetch(`${APUURL}/api/games/`, {
+    fetch(`${APIURL}/api/games/`, {
       method: 'GET',
       headers: new Headers({
         'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ class GamesList extends React.Component {
       })
   }
   GamesDelete = (event) => { //1 
-    fetch(`${APUURL}/api/games/creategame`, {
+    fetch(`${APIURL}/api/games/creategame`, {
       method: 'DELETE', //2
       body: JSON.stringify({ Games: { id: event.target.id } }), //3
       headers: new Headers({
