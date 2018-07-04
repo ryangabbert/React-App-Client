@@ -7,7 +7,10 @@ class GamesList extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      Games: []
+      Games: [],
+      updatePressed: false,
+      gamesToUpdate: {}
+
     }
   }
   componentWillMount() {
@@ -26,17 +29,38 @@ class GamesList extends React.Component {
         return this.setState({Games:gameData })
       })
   }
-  GamesDelete = (event) => { //1 
-    fetch(`${APIURL}/api/games/deletegame`, {
+  GamesDelete = (event) => {
+    fetch(`${APIURL}/api/games/delete/:id`, {
       method: 'DELETE', //2
-      body: JSON.stringify({ Games: { id: event.target.id } }), //3
+      body: JSON.stringify({ Games: { id: event.target.id } }),
       headers: new Headers({
         'Content-Type': 'application/json',
-        'Authorization': this.props.token //4
+        'Authorization': this.props.token 
       })
     })
-      .then((res) => this.fetchGames()) //5 
+      .then((res) => this.fetchGames()) 
   }
+  gamesUpdate = (event, games) => {
+    fetch(`${APIURL}/api/games/${games.id}`, {
+      method: 'PUT',
+      body: JSON.stringify({ log: games }),
+      headers: new Headers({
+        'Content-Type': 'application/json',
+        'Authorization': this.props.token
+      })
+    })
+    .then((res) => {
+      this.setState({ updatePressed: false })
+      this.fetchGames();
+    })
+  }
+  setUpdatedGames = (event, games) => {
+    this.setState({
+        gamesToUpdate: games, //2
+        updatePressed: true //1
+    })
+}
+
   render() {
     const games = this.state.Games.length >= 1 ?
     <GamesTable Games={this.state.Games} delete={this.GamesDelete} update={this.setUpdatedGames} /> :
@@ -51,6 +75,12 @@ class GamesList extends React.Component {
             {games}
           </Col>
         </Row>
+        <Col md="12">  
+          {
+            this.state.updatePressed ? <GamesEdit t={this.state.updatePressed} update={this.GamesUpdate} games={this.state.gamesToUpdate} /> 
+            : <div></div>
+          }
+        </Col>
       </Container>
     )
   }
