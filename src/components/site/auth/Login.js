@@ -7,8 +7,7 @@ class Login extends Component {
         super(props)
         this.state = {
             user_name: '',
-            password: '',
-            email: ''
+            password: ''
         };
     }
     handleChange = (event) => {
@@ -42,10 +41,6 @@ class Login extends Component {
                     <FormGroup>
                         <Label for="password">Password</Label>
                         <Input id="su_passWord" type="password" name="password" placeholder="enter password" onChange={this.handleChange}/>
-                    </FormGroup>
-                    <FormGroup>
-                        <Label for="email">Email</Label>
-                        <Input id="email" type="email" name="email" placeholder="enter email" onChange={this.handleChange}/>
                     </FormGroup>
                     <Button type="submit"> Submit </Button>
                 </Form>
