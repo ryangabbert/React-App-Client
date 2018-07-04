@@ -14,7 +14,7 @@ class TeamList extends React.Component {
     this.fetchTeam()
   }
   fetchTeam = () => {
-    fetch(`'${APIURL}/api/team/'`, {
+    fetch(`${APIURL}/api/team/`, {
       method: 'GET',
       headers: new Headers({
         'Content-Type': 'application/json',

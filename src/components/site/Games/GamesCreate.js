@@ -20,7 +20,7 @@ class GamesCreate extends Component {
     }
     handleSubmit = (event) => {
         event.preventDefault();
-        fetch(`'${APIURL}/api/games/creategame'`, {
+        fetch(`${APIURL}/api/games/creategame`, {
             method: 'POST',
             body: JSON.stringify({Games:this.state }),
             headers: new Headers({
