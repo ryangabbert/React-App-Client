@@ -17,7 +17,7 @@ class Signup extends Component {
         });
     }
     handleSubmit = (event) => {
-        fetch(`'${APIURL}/api/user/signup'`, {
+        fetch(`${APIURL}/api/user/signup`, {
             method: 'POST',
             body: JSON.stringify({User:this.state}),
             headers: new Headers({
@@ -34,7 +34,6 @@ class Signup extends Component {
         return (
             <div>
                 <h1>Sign Up</h1>
-                <h6>Hello</h6>
                 <Form onSubmit={this.handleSubmit}>
                     <FormGroup>
                         <Label for="username">Username</Label>

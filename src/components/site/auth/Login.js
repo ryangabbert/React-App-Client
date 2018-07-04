@@ -17,7 +17,7 @@ class Login extends Component {
         });
     }
     handleSubmit = (event) => {
-        fetch(`'${APIURL}/api/user/login'`, {
+        fetch(`${APIURL}/api/user/login`, {
             method: 'POST',
             body: JSON.stringify({User:this.state}),
             headers: new Headers({
@@ -34,7 +34,6 @@ class Login extends Component {
         return (
             <div>
                 <h1>Login</h1>
-                <h6>Hello</h6>
                 <Form onSubmit={this.handleSubmit}>
                     <FormGroup>
                         <Label for="username">Username</Label>
@@ -46,7 +45,7 @@ class Login extends Component {
                     </FormGroup>
                     <FormGroup>
                         <Label for="email">Email</Label>
-                        <Input id="Email" type="email" name="email" placeholder="enter email" onChange={this.handleChange}/>
+                        <Input id="email" type="email" name="email" placeholder="enter email" onChange={this.handleChange}/>
                     </FormGroup>
                     <Button type="submit"> Submit </Button>
                 </Form>
