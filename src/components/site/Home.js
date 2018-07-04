@@ -10,7 +10,7 @@ export default class Home extends Component {
         return (
             <div>
             <Jumbotron fluid>
-              <Container fluid>
+              <Container fluid id="jumbotron">
                 <h1 className="display-3">Welcome to Indy Soccer!</h1>
                 <img src={soccerPic} alt="jumbotronPic"/>
               </Container>
