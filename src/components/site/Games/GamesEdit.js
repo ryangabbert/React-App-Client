@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input, Modal, ModalHeader, ModalBody } from 'reactstrap';
-​
 class GamesEdit extends React.Component {
     constructor(props) {
         super(props)
