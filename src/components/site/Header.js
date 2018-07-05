@@ -48,9 +48,6 @@ class Header extends Component {
                     <NavLink href="/about/">About Us</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/contact/">Contact Us</NavLink>
-                  </NavItem>
-                  <NavItem>
                   <Button onClick={() => this.props.clickLogout()}>Logout</Button>
                   </NavItem>
                 </Nav>
