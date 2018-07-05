@@ -25,8 +25,8 @@ const TeamTable = (props) => {
                 <td>{team.position}</td>
                 <td>{team.email}</td>
                 <td>
-                    <Button id={team.id} onClick={props.delete} color="danger">Delete</Button>| //4
-                    <Button id={team.id} onClick={e => props.update(e, )} color="warning">Update</Button>
+                    <Button id={team.id} onClick={props.delete} color="danger">Delete</Button>| 
+                    <Button id={team.id} onClick={e => props.update(e, team)} color="warning">Update</Button>
                 </td>
             </tr>
         )

@@ -26,8 +26,8 @@ class GamesList extends React.Component {
       })
     })
       .then((res) => res.json())
-      .then((gameData) => {
-        return this.setState({Games:gameData })
+      .then((gamesData) => {
+        return this.setState({Games:gamesData })
       })
   }
   GamesDelete = (event) => {
