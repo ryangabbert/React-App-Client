@@ -14,7 +14,7 @@ class GamesList extends React.Component {
 
     }
   }
-  componentDidMount() {
+  componentWillMount() {
     this.fetchGames()
   }
   fetchGames = () => {
