@@ -30,7 +30,7 @@ class Main extends Component {
         if (this.state.sessionToken === localStorage.getItem('token')) {
           return (
             <Switch>
-              <Route path='/games' exact>
+              <Route path='/games/creategame' exact>
                 <Splash sessionToken={this.state.sessionToken} />
               </Route>
               <Route path='/team' exact>

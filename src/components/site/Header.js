@@ -39,7 +39,7 @@ class Header extends Component {
                     <NavLink href="/home/">Home</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/games/">My Games</NavLink>
+                    <NavLink href="/games/creategame/">My Games</NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink href="/team/">My Team</NavLink>
