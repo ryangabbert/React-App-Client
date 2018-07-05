@@ -38,16 +38,16 @@ class GamesEdit extends React.Component {
                         <Form onSubmit={this.handleSubmit} >
                             <FormGroup>
                                 <Label for="location">Location</Label>
-                                <Input id="location" type="text" name="location_of_game" value={this.state.location} placeholder="enter location" onChange={this.handleChange} />
+                                <Input id="location" type="text" name="location_of_game" value={this.state.location_of_game} placeholder="enter location" onChange={this.handleChange} />
                             </FormGroup>
                             <FormGroup>
                                 <Label for="time">Time</Label>
-                                <Input id="time" type="text" name="time_of_game" value={this.state.time} onChange={this.handleChange} placeholder="enter time">
+                                <Input id="time" type="text" name="time_of_game" value={this.state.time_of_game} onChange={this.handleChange} placeholder="enter time">
                                 </Input>
                             </FormGroup>
                             <FormGroup>
                                 <Label for="date">Date</Label>
-                                <Input id="date" type="text" name="date_of_game" value={this.state.date} placeholder="enter date" onChange={this.handleChange} />
+                                <Input id="date" type="text" name="date_of_game" value={this.state.date_of_game} placeholder="enter date" onChange={this.handleChange} />
                             </FormGroup>
                             <FormGroup>
                                 <Label for="description">Description</Label>
