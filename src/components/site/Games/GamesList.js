@@ -41,7 +41,7 @@ class GamesList extends React.Component {
     })
       .then((res) => this.fetchGames()) 
   }
-  gamesUpdate = (event, games) => {
+  GamesUpdate = (event, games) => {
     fetch(`${APIURL}/api/games/${games.id}`, {
       method: 'PUT',
       body: JSON.stringify({ Games: games }),
