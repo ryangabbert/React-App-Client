@@ -63,7 +63,7 @@ class GamesList extends React.Component {
 }
 
   render() {
-    const games = this.state.Games.length >= 1 ?
+    const Games = this.state.Games.length >= 1 ?
     <GamesTable Games={this.state.Games} delete={this.GamesDelete} update={this.setUpdatedGames} /> :
     <h2>Log a game to see table</h2>
     return (

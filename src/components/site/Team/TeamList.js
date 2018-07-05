@@ -28,7 +28,7 @@ class TeamList extends React.Component {
       })
   }
   TeamDelete = (event) => { 
-    fetch(`${APIURL}/api/team/createteam`, {
+    fetch(`${APIURL}/api/team/delete/:id`, {
       method: 'DELETE', 
       body: JSON.stringify({ team: { id: event.target.id } }), 
       headers: new Headers({
