@@ -31,7 +31,7 @@ class GamesList extends React.Component {
       })
   }
   GamesDelete = (event) => {
-    fetch(`${APIURL}/api/games/delete/:id`, {
+    fetch(`${APIURL}/api/games/delete`, {
       method: 'DELETE', //2
       body: JSON.stringify({ Games: { id: event.target.id } }),
       headers: new Headers({
