@@ -18,17 +18,17 @@ const GamesTable = (props) => {
             </thead>
             <tbody>
             {
-    props.Games.map((game, id) => { 
+    props.Games.map((games, id) => { 
         return ( 
             <tr key={id}> 
-                <th scope="row">{game.id}</th>
-                <td>{game.location_of_game}</td>
-                <td>{game.time_of_game}</td>
-                <td>{game.date_of_game}</td>
-                <td>{game.description}</td>
+                <th scope="row">{games.id}</th>
+                <td>{games.location_of_game}</td>
+                <td>{games.time_of_game}</td>
+                <td>{games.date_of_game}</td>
+                <td>{games.description}</td>
                 <td>
-                    <Button id={game.id} onClick={props.delete} color="danger">Delete</Button>| 
-                    <Button id={game.id} onClick={e => props.update(e, game)} color="warning">Update</Button>
+                    <Button id={games.id} onClick={props.delete} color="danger">Delete</Button>| 
+                    <Button id={games.id} onClick={e => props.update(e, games)} color="warning">Update</Button>
                 </td>
             </tr>
         )
