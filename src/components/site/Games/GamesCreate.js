@@ -44,7 +44,7 @@ class GamesCreate extends Component {
             <div>
                 <h3>Create a Game</h3>
                 <hr />
-                <Form onSubmit={this.handlesubmit} >
+                <Form onSubmit={this.handleSubmit} >
                     <FormGroup>
                         <Label for="location">Location</Label>
                         <Input id="location" type="text" name="location_of_game" value={this.state.location} placeholder="enter location" onChange={this.handleChange} />

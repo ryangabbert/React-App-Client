@@ -44,7 +44,7 @@ class TeamCreate extends Component {
             <div>
                 <h3>Add Players</h3>
                 <hr />
-                <Form onSubmit={this.handlesubmit} >
+                <Form onSubmit={this.handleSubmit} >
                     <FormGroup>
                         <Label for="player_name">Name</Label>
                         <Input id="player_name" type="text" name="player_name" value={this.state.player_name} placeholder="enter name" onChange={this.handleChange} />
