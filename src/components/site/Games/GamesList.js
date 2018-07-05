@@ -78,7 +78,7 @@ class GamesList extends React.Component {
         </Row>
         <Col md="12">  
           {
-            this.state.updatePressed ? <GamesEdit t={this.state.updatePressed} update={this.GamesUpdate} Game={this.state.gamesToUpdate} /> 
+            this.state.updatePressed ? <GamesEdit t={this.state.updatePressed} update={this.GamesUpdate} Games={this.state.gamesToUpdate} /> 
             : <div></div>
           }
         </Col>
