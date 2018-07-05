@@ -32,6 +32,7 @@ class GamesCreate extends Component {
                 // after we create a log we want to pull that data from the server.
                 this.props.updateGamesArray()
                 this.setState({
+                    id: '',
                     location_of_game: '',
                     time_of_game: '',
                     date_of_game: '',
