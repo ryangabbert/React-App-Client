@@ -46,15 +46,15 @@ class GamesCreate extends Component {
                 <Form onSubmit={this.handlesubmit} >
                     <FormGroup>
                         <Label for="location_of_game">Location</Label>
-                        <Input id="location_of_game" type="text" name="location_of_game" value={this.state.location} placeholder="enter location" onChange={this.handleChange} />
+                        <Input id="location_of_game" type="text" name="location_of_game" value={this.state.location_of_game} placeholder="enter location" onChange={this.handleChange} />
                         </FormGroup>
                         <FormGroup>
                         <Label for="time_of_game">Time</Label>
-                        <Input id="time_of_game" type="time" name="time" value={this.state.time} placeholder="enter time of game" onChange={this.handleChange} />
+                        <Input id="time_of_game" type="time" name="time" value={this.state.time_of_game} placeholder="enter time of game" onChange={this.handleChange} />
                     </FormGroup>
                     <FormGroup>
                         <Label for="date_of_game">Date</Label>
-                        <Input id="date_of_game" type="date" name="date" value={this.state.date} placeholder="enter date of game" onChange={this.handleChange} />
+                        <Input id="date_of_game" type="date" name="date" value={this.state.date_of_game} placeholder="enter date of game" onChange={this.handleChange} />
                     </FormGroup>
                     <FormGroup>
                         <Label for="description">Notes</Label>
