@@ -10,7 +10,7 @@ class GamesList extends React.Component {
     this.state = {
       Games: [],
       updatePressed: false,
-      gamesToUpdate: {}
+      GamesToUpdate: {}
 
     }
   }
