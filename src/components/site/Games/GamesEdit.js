@@ -13,6 +13,7 @@ class GamesEdit extends React.Component {
     }
     componentWillMount() {
         this.setState({
+            id: this.props.Games.id,
             location_of_game: this.props.Games.location_of_game,
             time_of_game: this.props.Games.time_of_game,
             date_of_game: this.props.Games.date_of_game,
