@@ -19,7 +19,6 @@ class GamesCreate extends Component {
         })
     }
     handleSubmit = (event) => {
-        event.preventDefault();
         fetch(`${APIURL}/api/games/creategame`, {
             method: 'POST',
             body: JSON.stringify({Games:this.state }),
@@ -40,6 +39,7 @@ class GamesCreate extends Component {
                     description: ''
                 })
             })
+            event.preventDefault();
     }
     render() {
         return (
