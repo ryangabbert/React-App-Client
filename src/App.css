@@ -55,3 +55,7 @@ ul {
   margin: auto;
   width: 90%;
   padding: 5px; }
+
+#jumbotronPic {
+  align-content: center;
+  text-align: center; }
