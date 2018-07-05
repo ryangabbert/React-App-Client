@@ -56,6 +56,7 @@ class Main extends Component {
         return (
           <Router>
             <div>
+              <Header clickLogout={this.logout} />
               {this.protectedViews()}
             </div>
           </Router>
