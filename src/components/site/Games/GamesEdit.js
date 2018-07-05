@@ -36,20 +36,20 @@ class GamesEdit extends React.Component {
                     <ModalBody>
                         <Form onSubmit={this.handleSubmit} >
                             <FormGroup>
-                                <Label for="location_of_game">Location</Label>
-                                <Input id="location_of_game" type="text" name="location_of_game" value={this.state.location_of_game} placeholder="enter location" onChange={this.handleChange} />
+                                <Label for="location">Location</Label>
+                                <Input id="location" type="text" name="location_of_game" value={this.state.location} placeholder="enter location" onChange={this.handleChange} />
                             </FormGroup>
                             <FormGroup>
-                                <Label for="time_of_game">Type</Label>
-                                <Input type="text" name="time_of_game" id="time_of_game" value={this.state.time_of_game} onChange={this.handleChange} placeholder="enter time">
+                                <Label for="time">Time</Label>
+                                <Input id="time" type="text" name="time_of_game" value={this.state.time} onChange={this.handleChange} placeholder="enter time">
                                 </Input>
                             </FormGroup>
                             <FormGroup>
-                                <Label for="date_of_game">Notes</Label>
-                                <Input id="date_of_game" type="text" name="date_of_game" value={this.state.date_of_game} placeholder="enter date" onChange={this.handleChange} />
+                                <Label for="date">Date</Label>
+                                <Input id="date" type="text" name="date_of_game" value={this.state.date} placeholder="enter date" onChange={this.handleChange} />
                             </FormGroup>
                             <FormGroup>
-                                <Label for="description">Notes</Label>
+                                <Label for="description">Description</Label>
                                 <Input id="description" type="text" name="description" value={this.state.description} placeholder="enter description" onChange={this.handleChange} />
                             </FormGroup>
                             <Button type="submit" color="primary"> Submit </Button>
