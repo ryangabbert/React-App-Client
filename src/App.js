@@ -32,6 +32,7 @@ class App extends Component {
     return (
       <div>
           <Header clickLogout={this.logout} />
+          {this.protectedViews()}
           <Main />
           <Footer />
          </div>

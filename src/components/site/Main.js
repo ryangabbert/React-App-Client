@@ -56,24 +56,10 @@ class Main extends Component {
         return (
           <Router>
             <div>
-              <Header clickLogout={this.logout} />
               {this.protectedViews()}
             </div>
           </Router>
         );
       }
     }
-// const Main = () => (
-//     <Router>
-//   <main>
-//     <Switch>
-//       <Route exact path='/home' component={Home}/>
-//       <Route path='/about' component={About}/>
-//       {/* <Route path='/team' component={Team}/> */}
-//       <Route path='/games' component={Splash}/>
-//       {/* <Route path='/contact' component={Contact}/> */}
-//     </Switch>
-//   </main>
-//   </Router>
-// )
 export default Main;
