@@ -18,7 +18,7 @@ class GamesList extends React.Component {
     this.fetchGames()
   }
   fetchGames = () => {
-    fetch(`${APIURL}/api/games/creategame`, {
+    fetch(`${APIURL}/api/games/`, {
       method: 'GET',
       headers: new Headers({
         'Content-Type': 'application/json',
