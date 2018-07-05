@@ -73,7 +73,7 @@ class GamesList extends React.Component {
           <GamesCreate token={this.props.token} updateGamesArray={this.fetchGames}/>
           </Col>
           <Col md="9">
-            {games}
+            {Games}
           </Col>
         </Row>
         <Col md="12">  

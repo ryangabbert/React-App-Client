@@ -5,6 +5,7 @@ class GamesCreate extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            id: '',
             location_of_game: '',
             time_of_game: '',
             date_of_game: '',
