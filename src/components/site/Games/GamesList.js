@@ -18,7 +18,7 @@ class GamesList extends React.Component {
     this.fetchGames()
   }
   fetchGames = () => {
-    fetch(`${APIURL}/api/games/`, {
+    fetch(`${APIURL}/api/games/creategame`, {
       method: 'GET',
       headers: new Headers({
         'Content-Type': 'application/json',
@@ -26,7 +26,7 @@ class GamesList extends React.Component {
       })
     })
       .then((res) => res.json())
-      
+
       .then((gameData) => {
         return this.setState({Games:gameData })
       })

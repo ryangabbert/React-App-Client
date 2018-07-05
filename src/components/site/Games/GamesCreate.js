@@ -20,7 +20,7 @@ class GamesCreate extends Component {
         event.preventDefault();
         fetch(`${APIURL}/api/games/creategame`, {
             method: 'POST',
-            body: JSON.stringify({ Games:this.state }),
+            body: JSON.stringify({ Games: this.state }),
             headers: new Headers({
                 'Content-Type': 'application/json',
                 'Authorization': this.props.token
