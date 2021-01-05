@@ -7,7 +7,7 @@
     "aframe-animation-component": "^4.0.0-beta9",
     "aframe-particle-system-component": "^1.0.11",
     "aframe-react": "^4.3.0",
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.0.0",
     "lodash": "^4.17.4",
